@@ -1,0 +1,149 @@
+.serviceAccordionSection {
+  padding: 50px 0 50px;
+}
+
+.accordionMenu {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.accordionItem {
+  border-top: 1px solid #f3d1bf;
+  border-bottom: 1px solid #f3d1bf;
+}
+
+.accordionHeader {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 35px 0;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+
+.accordionHeader img {
+  transition: transform 0.3s;
+}
+
+.accordionHeader img:hover {
+  transform: scale(1.1);
+}
+
+.accordionHeader h3 {
+  font-size: 56px;
+  font-weight: 700;
+  color: #391400;
+  flex-grow: 1;
+  margin: 0;
+}
+
+.accordionHeader h3:active {
+  color: #391400;
+}
+
+.accordionContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #8f7567;
+  line-height: 32px;
+  margin: 0 0 50px;
+  border-top: 1px solid #f3d1bf;
+  padding-top: 35px;
+}
+
+.sectionTitle {
+  color: #391400;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  width: 570px;
+}
+
+.sectionDescription {
+  line-height: 32px;
+  width: 570px;
+  color: #a08679;
+  margin: 30px 0 30px;
+}
+
+.checkItem {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.checkItem p {
+  color: #391400;
+  margin: 0;
+}
+
+.serviceAccordion {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 20px;
+}
+
+.serviceCheckSection {
+  width: 570px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  .accordionHeader {
+    gap: 15px;
+    padding: 25px 0;
+  }
+
+  .accordionContent {
+    padding-top: 25px;
+    margin: 0 0 35px;
+  }
+
+  .checkItem {
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .serviceAccordionSection {
+    padding: 30px 15px;
+  }
+
+  .accordionHeader {
+    gap: 15px;
+    padding: 25px 0;
+  }
+
+  .accordionHeader h3 {
+    font-size: 32px;
+  }
+
+  .accordionContent {
+    padding-top: 20px;
+    margin: 0 0 25px;
+  }
+
+  .sectionTitle {
+    font-size: 28px;
+    line-height: 1.2;
+    width: 100%;
+  }
+
+  .sectionDescription {
+    width: 100%;
+  }
+
+  .serviceAccordion {
+    align-items: flex-start;
+  }
+
+  .serviceCheckSection {
+    width: 100%;
+  }
+}

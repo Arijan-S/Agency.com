@@ -1,0 +1,238 @@
+.pricingSection {
+  background-color: #fdf0e9;
+  padding: 100px 0 100px;
+}
+
+.subHeader {
+  color: #ef6d58;
+  font-size: 16px;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+}
+
+.pricingContainer h3 {
+  font-size: 56px;
+  font-weight: 700;
+  color: #391400;
+  line-height: 64px;
+  width: 365px;
+}
+
+.offers {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.offerCard1 {
+  flex: 1;
+  width: 391px;
+  height: 512px;
+  padding: 50px;
+  border: 1px solid #f3d1bf;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  border-right: none;
+}
+
+.cardSubHeader {
+  font-size: 16px;
+  color: #ef6d58;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+}
+
+.offerCard1 h4 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #391400;
+  margin-bottom: 30px;
+}
+
+.cardDescription {
+  width: 295px;
+  line-height: 32px;
+  font-size: 16px;
+  color: #907567;
+  margin-bottom: 40px;
+}
+
+.offer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.offer p:first-child {
+  font-size: 16px;
+  color: #391400;
+}
+
+.offer p:nth-child(3) {
+  font-size: 16px;
+  color: #a08679;
+}
+
+.offerCard1 button {
+  width: 138px;
+  height: 48px;
+  border: none;
+  border-radius: 7px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #391400;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: all 0.3s ease;
+}
+
+.offerCard1 button:hover {
+  background-color: #ef6d58;
+  color: #fff;
+}
+
+.offerCard2 {
+  flex: 1;
+  width: 391px;
+  height: 560px;
+  padding: 50px;
+  border: 1px solid #f3d1bf;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+  background-color: #fff;
+  margin-top: -48px;
+}
+
+.tag {
+  width: 92px;
+  height: 38px;
+  background-color: #ef6d58;
+  border-radius: 19px;
+  margin: -15px 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #fff;
+}
+
+.offerCard2 h4 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #391400;
+  margin-bottom: 30px;
+}
+
+.offerCard2 button {
+  width: 138px;
+  height: 48px;
+  border: none;
+  border-radius: 7px;
+  background-color: #ef6d58;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: all 0.3s ease;
+}
+
+.offerCard2 button:hover {
+  background-color: #fff;
+  color: #391400;
+  border: 1px solid #ef6d58;
+}
+
+.offerCard3 {
+  flex: 1;
+  width: 391px;
+  height: 512px;
+  padding: 50px;
+  border: 1px solid #f3d1bf;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-left: none;
+}
+
+.offerCard3 h4 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #391400;
+  margin-bottom: 30px;
+}
+
+.offerCard3 button {
+  width: 138px;
+  height: 48px;
+  border: none;
+  border-radius: 7px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #391400;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: all 0.3s ease;
+}
+
+.offerCard3 button:hover {
+  background-color: #ef6d58;
+  color: #fff;
+}
+
+@media (max-width: 500px) {
+  .pricingSection {
+    background-color: #fdf0e9;
+    padding: 50px 0 50px;
+  }
+
+  .offers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .offerCard1,
+  .offerCard2,
+  .offerCard3 {
+    width: 100%;
+    max-width: 391px;
+    height: auto;
+    min-height: 512px;
+    padding: 30px;
+    border: 1px solid #f3d1bf;
+    border-radius: 7px;
+    margin-top: 0;
+  }
+
+  .offerCard1 {
+    border-radius: 7px 7px 0 0;
+  }
+
+  .offerCard2 {
+    background-color: #fff;
+    border-radius: 0;
+  }
+
+  .offerCard3 {
+    border-radius: 0 0 7px 7px;
+  }
+
+  .cardDescription {
+    width: 100%;
+  }
+
+  .pricingContainer h3 {
+    text-align: left;
+  }
+}

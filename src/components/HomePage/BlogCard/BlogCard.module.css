@@ -1,0 +1,36 @@
+.card {
+  width: 100%;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.subtitle {
+  font-size: 20px;
+  color: #391400;
+  margin-top: 20px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #391400;
+  width: 100%;
+  line-height: 32px;
+  margin-top: 25px;
+}
+
+.date {
+  color: #907467;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  .title {
+    text-align: left;
+  }
+}

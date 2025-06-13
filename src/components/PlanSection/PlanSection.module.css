@@ -1,0 +1,134 @@
+.featuresPlanContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.featurePlanDescription a {
+  font-size: 16px;
+  color: #391400;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.featurePlanDescription a::after {
+  content: "";
+  position: absolute;
+  background-color: #ef6d58;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: all 0.3s ease;
+}
+
+.featurePlanDescription a:hover::after {
+  width: 100%;
+}
+
+.plansubdescription {
+  width: 370px;
+  line-height: 32px;
+  color: #391400;
+}
+
+.planSubheader {
+  font-size: 16px;
+  color: #ef6d58;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+}
+
+.planDescription {
+  font-size: 20px;
+  color: #391400;
+  line-height: 32px;
+  max-width: 370px;
+  margin-bottom: 30px;
+}
+
+.plansCardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 50px 0 0;
+}
+
+.planCard_1 {
+  width: 336px;
+  height: 336px;
+  padding: 50px;
+  border: 1px solid #f3d1bf;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+  background-color: #ffffff;
+}
+
+.planCard_1 h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #391400;
+  margin: 20px 0 30px;
+}
+
+.planCard_1 p {
+  font-size: 16px;
+  color: #391400, 64%;
+  line-height: 32px;
+  max-width: 240px;
+}
+
+.planCard_2 {
+  width: 336px;
+  height: 272px;
+  padding: 50px;
+  border: 1px solid #f3d1bf;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-left: none;
+  align-self: flex-end;
+}
+
+.planCard_2 h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #391400;
+  margin: 50px 0 30px;
+}
+
+.planCard_2 p {
+  font-size: 16px;
+  color: #391400, 64%;
+  line-height: 32px;
+  max-width: 240px;
+}
+
+@media screen and (max-width: 500px) {
+  .plansCardContainer {
+    justify-content: center;
+  }
+
+  .planCard_1 h3 {
+    text-align: left;
+  }
+
+  .planCard_2 h3 {
+    text-align: left;
+  }
+
+  .planCard_1 {
+    width: 100%;
+    border-radius: 7px 7px 0 0;
+  }
+
+  .planCard_2 {
+    width: 100%;
+    border: 1px solid #f3d1bf;
+    border-radius: 0 0 7px 7px;
+    border-top: none;
+  }
+}

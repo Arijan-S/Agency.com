@@ -1,0 +1,98 @@
+.servicePage {
+  background-color: #fdf0e9;
+}
+
+.servicePageDescription {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #28293d;
+}
+
+.servicePageDescription h2 {
+  font-size: clamp(40px, 8vw, 72px);
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.servicePageDescription p {
+  color: #868793;
+  line-height: 32px;
+  width: 570px;
+}
+
+.servicePageContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 100px 20px;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.servicePageHeader {
+  flex: 1;
+}
+
+.servicePageHeader h3 {
+  color: #391400;
+  font-size: clamp(30px, 5vw, 40px);
+  line-height: 1.2;
+  margin: 0;
+}
+
+.serviceDescription {
+  color: #ae988b;
+  line-height: 32px;
+  margin-top: 50px;
+}
+
+.subheader {
+  color: #ef6d58;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.servicesHeader h3 {
+  color: #391400;
+  font-size: clamp(30px, 5vw, 40px);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.serviceDescription p {
+  color: #ae988b;
+  line-height: 32px;
+  max-width: 570px;
+  margin-top: 100px;
+}
+
+@media (max-width: 800px) {
+  .servicePageContainer {
+    flex-direction: column;
+    padding: 50px 20px;
+  }
+
+  .servicePageHeader {
+    width: 100%;
+  }
+
+  .serviceDescription {
+    margin-top: 0;
+  }
+
+  .subheader {
+    margin-left: 0;
+  }
+
+  .servicePageHeader h3 {
+    text-align: left;
+  }
+
+  .serviceDescription p {
+    margin-top: 30px;
+    max-width: 100%;
+  }
+}

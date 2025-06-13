@@ -1,0 +1,91 @@
+.ourAwardsSection {
+  background-color: #fdf0e9;
+  padding: 100px 0 100px;
+}
+
+.ourAwardsContainer h3 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  color: #391400;
+  margin-bottom: 50px;
+}
+
+.hrLine {
+  width: 100%;
+  height: 1px;
+  border: 1px solid #f3d1bf;
+  margin: 20px 0 20px;
+}
+
+.awardsList {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.awardRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.awardInfo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex: 1;
+}
+
+.awardDate {
+  color: #977d71;
+}
+
+.awardOrg {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: flex-end;
+  flex: 1;
+  color: #391400;
+}
+
+@media (max-width: 500px) {
+  .awardRow {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .awardInfo {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .awardOrg {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+  }
+
+  .ourAwardsSection {
+    padding: 70px 0 100px;
+  }
+
+  .hrLine {
+    width: 100%;
+    height: 1px;
+    border: 1px solid #f3d1bf;
+  }
+
+  .awardImage {
+    padding: 30px 0 30px;
+  }
+
+  .cssDesign {
+    margin-bottom: 30px;
+  }
+}

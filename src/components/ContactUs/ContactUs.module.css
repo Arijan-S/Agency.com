@@ -1,0 +1,313 @@
+.getInTouchSection {
+  position: relative;
+  width: 100%;
+  height: 720px;
+  overflow: hidden;
+  background-color: #fdeee9;
+}
+
+.mapBg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.contactBox {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  padding: 50px;
+  border-radius: 7px;
+  z-index: 1;
+  width: 470px;
+  height: auto;
+  min-height: 464px;
+  max-width: 90%;
+  left: 25.7%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contactBox h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #391400;
+  margin: 10px 0 30px;
+}
+
+.inputGroup {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.contactBox input,
+.contactBox textarea {
+  width: 100%;
+  height: 48px;
+  padding: 12px 14px;
+  margin-bottom: 0;
+  border: 1px solid #f3d1bf;
+  border-radius: 7px;
+  resize: none;
+  color: #391400;
+  transition: all 0.3s ease;
+}
+
+.contactBox textarea {
+  height: 96px;
+  padding-top: 12px;
+}
+
+.contactBox input:focus,
+.contactBox textarea:focus,
+.subjectSelect:focus {
+  outline: none;
+  border-color: #ef6d58;
+  box-shadow: 0 0 0 2px rgba(239, 109, 88, 0.1);
+}
+
+.contactBox input:invalid:not(:placeholder-shown),
+.contactBox textarea:invalid:not(:placeholder-shown) {
+  border-color: #ef6d58;
+}
+
+.selectWrapper {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.subjectSelect {
+  height: 48px;
+  padding: 12px 14px;
+  border: 1px solid #f3d1bf;
+  border-radius: 7px;
+  color: #391400;
+  appearance: none;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.selectIcon {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.formCta {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+
+.formCta button {
+  width: 154px;
+  height: 48px;
+  border: none;
+  border-radius: 7px;
+  background-color: #ef6d58;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.formCta button:hover {
+  background-color: #fff;
+  color: #391400;
+  border: 1px solid #ef6d58;
+}
+
+.contactUsSection {
+  background-color: #fdeee9;
+  padding: 100px 0 50px;
+}
+
+.contactContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #f3d1bf;
+  border-radius: 7px;
+  margin: 0 auto;
+}
+
+.contact {
+  border-right: 1px solid #f3d1bf;
+  max-width: 100%;
+  padding: 40px;
+  width: 391px;
+  height: auto;
+  min-height: 192px;
+}
+
+.contactOption {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.contactOption p {
+  color: #ef6d58;
+  letter-spacing: 3px;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #391400;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.contact a:hover {
+  color: #ef6d58;
+}
+
+@media screen and (max-width: 1200px) {
+  .contactContainer {
+    margin: 0 20px;
+  }
+
+  .contactBox {
+    left: 50%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .getInTouchSection {
+    height: auto;
+    min-height: 720px;
+    padding: 50px 0;
+  }
+
+  .mapBg {
+    height: 100%;
+    opacity: 0.5;
+  }
+
+  .contactBox {
+    position: relative;
+    top: 0;
+    transform: none;
+    margin: 50px auto;
+    left: 0;
+    width: 90%;
+    max-width: 470px;
+  }
+
+  .contact {
+    width: 50%;
+    border-right: none;
+    border-bottom: 1px solid #f3d1bf;
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .getInTouchSection {
+    padding: 30px 0;
+    min-height: 600px;
+  }
+
+  .mapBg {
+    opacity: 0.3;
+  }
+
+  .contactBox {
+    padding: 30px;
+    margin: 30px auto;
+  }
+
+  .contact {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #f3d1bf;
+    padding: 25px;
+  }
+
+  .contact:last-child {
+    border-bottom: none;
+  }
+
+  .contactBox h3 {
+    font-size: 20px;
+    margin: 10px 0 20px;
+  }
+
+  .contact a {
+    font-size: 18px;
+  }
+
+  .contactOption {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .getInTouchSection {
+    padding: 20px 0;
+    min-height: 500px;
+  }
+
+  .mapBg {
+    opacity: 0.2;
+  }
+
+  .contactBox {
+    padding: 20px;
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .formCta button {
+    width: 100%;
+  }
+
+  .contactOption {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .contact {
+    padding: 20px;
+  }
+
+  .contactOption p {
+    font-size: 14px;
+  }
+
+  .contactUsSection {
+    background-color: #fdeee9;
+    padding: 100px 0 50px;
+  }
+
+  .contactContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #f3d1bf;
+    border-radius: 7px;
+    margin: 0 auto;
+  }
+
+  .contact {
+    padding: 40px;
+    width: 391px;
+    height: auto;
+    min-height: 192px;
+  }
+}

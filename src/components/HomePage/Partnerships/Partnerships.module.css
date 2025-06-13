@@ -1,0 +1,29 @@
+.partnershipsContainer {
+  background-color: #fdf0e9;
+  padding: 50px 0 50px;
+}
+
+.partnerships {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hrLine {
+  width: 100%;
+  height: 4px;
+  background-color: #f9e4d9;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 500px) {
+  .partnerships {
+    justify-content: center;
+    gap: 60px;
+  }
+
+  .hrLine {
+    margin-top: 70px;
+  }
+}

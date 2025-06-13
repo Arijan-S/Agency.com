@@ -1,0 +1,105 @@
+.eventSection {
+  background-color: #28293e;
+  padding: 100px 0 50px;
+}
+
+.eventContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subheader {
+  color: #ef6d58;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+}
+
+.eventContainer h3 {
+  color: #fff;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: -1px;
+  max-width: 507px;
+  text-align: center;
+}
+
+.eventCardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.eventCard {
+  width: 370px;
+  height: 448px;
+  padding: 50px;
+  border: 1px solid #33364d;
+  border-radius: 7px;
+}
+
+.date {
+  display: flex;
+  gap: 15px;
+}
+
+.date h3 {
+  font-size: 72px;
+  font-weight: 700;
+}
+
+.date p {
+  line-height: 32px;
+  max-width: 127px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.time p {
+  font-size: 16px;
+  color: #fff;
+}
+
+.hrLine {
+  width: 290px;
+  height: 1px;
+  background-color: #33364d;
+  margin: 50px 0 50px;
+}
+
+.eventCard h4 {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 32px;
+  width: 290px;
+  color: #b2b2ba;
+  margin-top: 30px;
+}
+
+@media (max-width: 500px) {
+  .eventCardContainer {
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .eventCard {
+    width: 100%;
+  }
+}

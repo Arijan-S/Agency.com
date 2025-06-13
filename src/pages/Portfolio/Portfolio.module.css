@@ -1,0 +1,173 @@
+.portfolioPageDescription {
+  text-align: center;
+  padding: 50px 0 50px;
+  background-color: #28293d;
+}
+
+.portfolioPageDescription h2 {
+  font-size: 72px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.portfolioPageDescription p {
+  color: #868793;
+  line-height: 32px;
+}
+
+.portfolioSection {
+  background-color: #fdf0e9;
+}
+
+.portfolioContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 0 0;
+}
+
+.linkContainer ul {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  list-style: none;
+  position: relative;
+}
+
+.linkContainer a {
+  text-decoration: none;
+  color: #7f6355;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.linkContainer a::after {
+  content: "";
+  position: absolute;
+  background-color: #ef6d58;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: all 0.3s ease;
+}
+
+.linkContainer a:hover::after {
+  width: 100%;
+}
+
+.linkContainer a:active,
+.linkContainer a.active {
+  color: #391400;
+}
+
+.links {
+  position: relative;
+}
+
+.links span {
+  position: absolute;
+  top: -20px;
+  right: -10px;
+  bottom: 0;
+  color: #7f6355;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.portfolioDisplay {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.display {
+  width: 393px;
+  height: 416px;
+  overflow: hidden;
+  border-radius: 7px;
+}
+
+.display img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 7px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+}
+
+.display:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.35);
+}
+
+.dropdownContainer {
+  width: 100%;
+  margin: -50px auto 20px auto;
+  background: #fdf0e9;
+  border-radius: 6px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.dropdown {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #fbeee6;
+  border-radius: 6px;
+  background: #fff6f1;
+  color: #7f6355;
+  font-size: 16px;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  box-shadow: none;
+}
+
+.dropdown:focus {
+  border-color: #ef6d58;
+}
+
+.dropdownContainer::after {
+  content: "";
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 6px 6px 0 6px;
+  border-style: solid;
+  border-color: #ef6d58 transparent transparent transparent;
+  pointer-events: none;
+}
+
+.mobileDropdown {
+  display: none;
+}
+
+.desktopLinks {
+  display: block;
+}
+
+@media screen and (max-width: 500px) {
+  .desktopLinks {
+    display: none !important;
+  }
+  .mobileDropdown {
+    display: block;
+  }
+
+  .display {
+    width: 100%;
+    height: 486px;
+  }
+}

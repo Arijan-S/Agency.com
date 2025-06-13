@@ -1,0 +1,70 @@
+.bannerSection {
+  background-color: #fdf0e9;
+  padding: 50px 0 50px;
+}
+
+.banner {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 70px;
+  background-color: #ef6d58;
+  border-radius: 7px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.bannerDescription h2 {
+  color: #fff;
+  font-size: clamp(32px, 5vw, 56px);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.bannerDescription p {
+  color: #f9cac3;
+  line-height: 32px;
+  margin-bottom: 30px;
+  max-width: 470px;
+  width: 100%;
+}
+
+.bannerDescription button {
+  width: 154px;
+  height: 48px;
+  border: none;
+  border-radius: 7px;
+  background-color: #fff;
+  color: #391400;
+  font-size: 14px;
+  font-weight: 700;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.bannerDescription button:hover {
+  background-color: #ef6d58;
+  color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+  .banner {
+    padding: 50px 50px 50px;
+  }
+
+  .bannerImg {
+    width: 100%;
+  }
+  .bannerDescription h2 {
+    margin-top: 50px;
+    width: 274px;
+    font-size: 40px;
+  }
+
+  .bannerDescription p {
+    width: 273px;
+  }
+}

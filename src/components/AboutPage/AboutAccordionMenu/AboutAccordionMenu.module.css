@@ -1,0 +1,143 @@
+.faqSection {
+  background-color: #fdf0e9;
+  padding: 100px 50px;
+}
+
+.faqContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.subtitle {
+  color: #ef6d58;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+}
+
+.faqDescription h3 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 48px;
+  margin-bottom: 30px;
+}
+
+.description {
+  color: #7e7f8b;
+  line-height: 32px;
+  width: 100%;
+  max-width: 770px;
+  margin-bottom: 40px;
+}
+
+.accordionMenu {
+  width: 100%;
+  max-width: 770px;
+  background: transparent;
+  border-radius: 7px;
+  border: 1px solid #3a3c56;
+  overflow: hidden;
+}
+
+.accordionItem {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #3a3c56;
+}
+
+.accordionHeader {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 20px 15px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  background: transparent;
+  transition: box-shadow 0.2s, color 0.2s, font-weight 0.2s, background 0.2s;
+}
+
+.accordionHeader.open {
+  color: #391400;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  background: #fff;
+}
+
+.accordionContent {
+  width: 100%;
+  background: #fff;
+  padding: 15px 20px 24px 20px;
+  color: #896c5d;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.openItem {
+  background: #fff;
+}
+
+.accordionItem:last-child {
+  margin-bottom: none;
+}
+
+.accordionHeader img {
+  transition: transform 0.3s;
+}
+
+.accordionHeader img:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+  .faqSection {
+    padding: 60px 20px;
+  }
+
+  .faqDescription h3 {
+    font-size: 32px;
+    line-height: 40px;
+    text-align: left;
+  }
+
+  .accordionHeader {
+    font-size: 20px;
+    padding: 20px 15px 10px;
+  }
+
+  .accordionContent {
+    font-size: 14px;
+    line-height: 28px;
+    padding: 10px 15px 20px;
+  }
+
+  .description {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .faqSection {
+    padding: 40px 15px;
+  }
+
+  .faqDescription h3 {
+    font-size: 28px;
+    line-height: 36px;
+    text-align: left;
+  }
+
+  .accordionHeader {
+    font-size: 18px;
+    padding: 15px 10px 10px;
+  }
+
+  .description {
+    margin-bottom: 10px;
+  }
+}

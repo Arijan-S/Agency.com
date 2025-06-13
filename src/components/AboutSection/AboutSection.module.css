@@ -1,0 +1,136 @@
+.aboutContainer {
+  background-color: #fdf0e9;
+  padding: 50px 0 50px;
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.subheader {
+  color: #ef6d58;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+}
+
+.aboutDescription h2 {
+  font-size: 56px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 64px;
+  color: #391400;
+  max-width: 417px;
+  margin-bottom: 20px;
+}
+
+.subDescription {
+  font-size: 20px;
+  color: #391400;
+}
+
+.description {
+  color: #7f6355;
+  line-height: 32px;
+  max-width: 470px;
+  margin-top: 20px;
+}
+
+.aboutDescription button {
+  width: 138px;
+  height: 48px;
+  border: none;
+  border-radius: 7px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #391400;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: all 0.3s ease;
+}
+
+.aboutDescription button:hover {
+  background-color: #ef6d58;
+  color: #fff;
+}
+
+.stat_cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #f3d1bf;
+  border-radius: 7px;
+  margin-top: 100px;
+}
+
+.statCard {
+  border-right: 1px solid #f3d1bf;
+  padding: 50px;
+  max-width: 100%;
+  width: 401px;
+  height: 166px;
+}
+
+.statCard p:first-child {
+  font-size: 40px;
+  font-weight: 700;
+  color: #391400;
+  margin-bottom: 20px;
+}
+
+.statCard p:last-child {
+  font-size: 20px;
+  color: #391400;
+}
+
+@media screen and (max-width: 500px) {
+  .aboutContainer {
+    background-color: #fdf0e9;
+    padding: 30px 0 50px;
+  }
+
+  .secondImage {
+    width: 100%;
+  }
+
+  .subheader {
+    margin: 50px 0 30px;
+  }
+
+  .aboutDescription h2 {
+    margin-bottom: 30px;
+  }
+
+  .subDescription {
+    margin-bottom: 20px;
+  }
+
+  .description {
+    color: #7f6355;
+    line-height: 32px;
+    max-width: 470px;
+    margin-top: 20px;
+  }
+
+  .stat_cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #f3d1bf;
+    border-radius: 7px;
+    margin-top: 100px;
+  }
+
+  .statCard {
+    border-bottom: 1px solid #f3d1bf;
+    padding: 50px;
+    width: 100%;
+    height: 166px;
+  }
+}

@@ -1,0 +1,184 @@
+.testimonialSection {
+  background-color: #fdf0e9;
+  padding: 100px 0 50px;
+}
+
+.testimonialContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subHeader {
+  color: #ef6d58;
+  font-size: 16px;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+}
+
+.header {
+  color: #391400;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 64px;
+  max-width: 405px;
+  text-align: center;
+}
+
+.testimonialReviewContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.reviewCard:first-child {
+  flex: 1;
+  width: 586px;
+  height: 400px;
+  padding: 50px;
+  border: 1px solid #f3d1bf;
+  background-color: #fff;
+  border-top-left-radius: 7px;
+}
+
+.reviewCard:nth-child(2) {
+  flex: 1;
+  width: 586px;
+  height: 336px;
+  padding: 50px;
+  border: 1px solid #f3d1bf;
+  border-top-right-radius: 7px;
+}
+
+.reviewCard:nth-child(3) {
+  flex: 1;
+  width: 586px;
+  height: 336px;
+  padding: 50px;
+  border: 1px solid #f3d1bf;
+  border-bottom-left-radius: 7px;
+}
+
+.reviewCard:nth-child(4) {
+  flex: 1;
+  width: 586px;
+  height: 336px;
+  padding: 50px;
+  border: 1px solid #f3d1bf;
+  border-bottom-right-radius: 7px;
+  margin-top: -64px;
+}
+
+.description {
+  width: 490px;
+  line-height: 32px;
+  color: #896c5d;
+  font-size: 16px;
+  margin: 40px 0 30px;
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.personInfo h4 {
+  color: #391400;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.testimonialContainer button {
+  width: 138px;
+  height: 48px;
+  border: none;
+  border-radius: 7px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #391400;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 50px;
+  transition: all 0.3s ease;
+}
+
+.testimonialContainer button:hover {
+  background-color: #ef6d58;
+  color: #fff;
+}
+
+@media (max-width: 500px) {
+  .testimonialSection {
+    padding: 50px 20px;
+  }
+
+  .header {
+    font-size: 40px;
+    line-height: 48px;
+    max-width: 100%;
+  }
+
+  .testimonialReviewContainer {
+    flex-direction: column;
+  }
+
+  .reviewCard:first-child {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-top: 0;
+  }
+
+  .reviewCard:nth-child(2) {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-top: 0;
+  }
+
+  .reviewCard:nth-child(3) {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-top: 0;
+  }
+
+  .reviewCard:nth-child(4) {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    margin-top: 0;
+  }
+
+  .description {
+    width: 100%;
+    font-size: 14px;
+    line-height: 28px;
+    margin: 20px 0;
+  }
+
+  .personInfo h4 {
+    font-size: 20px;
+  }
+}

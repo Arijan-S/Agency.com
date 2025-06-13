@@ -1,0 +1,36 @@
+.notFound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0 100px;
+}
+
+.notFound h3 {
+  text-align: center;
+  font-size: 50px;
+  color: #391400;
+}
+
+.notFound a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #391400;
+  margin-top: 50px;
+  position: relative;
+}
+
+.notFound a::after {
+  content: "";
+  position: absolute;
+  background-color: #ef6d58;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: all 0.3s ease;
+}
+
+.notFound a:hover::after {
+  width: 100%;
+}

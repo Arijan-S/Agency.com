@@ -1,0 +1,311 @@
+.portfolioDetails {
+  background-color: #feeee9;
+  padding: 50px 20px;
+  box-sizing: border-box;
+}
+
+.backLink {
+  display: inline-block;
+  color: #391400;
+  text-decoration: none;
+  margin-bottom: 50px;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.backLink::after {
+  content: "";
+  position: absolute;
+  background-color: #ef6d58;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: all 0.3s ease;
+}
+
+.backLink:hover::after {
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projectTitle {
+  font-size: 72px;
+  font-weight: 700;
+  color: #391400;
+  width: 570px;
+  margin-bottom: 30px;
+}
+
+.projectDetail {
+  width: 570px;
+  line-height: 32px;
+  font-size: 20px;
+  color: #391400;
+  margin-bottom: 30px;
+}
+
+.projectDescription {
+  width: 570px;
+  line-height: 32px;
+  color: #391400b5;
+}
+
+h4 {
+  color: #ef6d58;
+  letter-spacing: 3px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin: 10px 0;
+  color: #391400;
+  width: 141px;
+  max-width: fit-content;
+}
+
+.projectMeta {
+  width: 570px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 50px;
+  margin: 50px 0 0;
+}
+
+.metaItemDate {
+  margin-top: 35px;
+}
+
+.mainImageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0 0;
+}
+
+.showcaseContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px 0 50px;
+}
+
+.images {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.images img {
+  height: 220px;
+}
+
+.video img {
+  cursor: pointer;
+  width: 600px;
+  height: auto;
+}
+
+h3 {
+  color: #391400;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.problemSolutionSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.problem {
+  color: #391400c0;
+  width: 570px;
+  line-height: 32px;
+  margin-bottom: 30px;
+}
+
+.solution {
+  color: #391400c0;
+  width: 570px;
+  line-height: 32px;
+}
+
+.socialSection {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 100px;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.socials img {
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.socials img:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 1200px) {
+  .projectTitle,
+  .projectDetail,
+  .projectDescription,
+  .projectMeta,
+  .problem,
+  .solution {
+    width: 90%;
+    max-width: 570px;
+  }
+
+  .video img {
+    width: 90%;
+    max-width: 600px;
+  }
+
+  .showcaseContainer {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .portfolioDetails {
+    padding: 30px 15px;
+  }
+
+  .backLink {
+    margin: 30px 0 0;
+  }
+
+  .projectTitle {
+    font-size: 48px;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .projectDetail,
+  .projectDescription {
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .projectMeta .images {
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .images img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .video img {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .problemSolutionSection {
+    margin-top: 50px;
+  }
+
+  .problem,
+  .solution {
+    width: 100%;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .projectMeta {
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+    gap: 50px;
+    margin: 30px 0 0;
+  }
+
+  .metaItemDate {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .portfolioDetails {
+    padding: 20px 10px;
+  }
+
+  .projectTitle {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .projectDetail {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .projectMeta {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .metaItemDate {
+    margin-top: 0;
+  }
+
+  .backLink {
+    margin-bottom: 30px;
+  }
+
+  .socialSection {
+    margin-top: 50px;
+  }
+
+  .images {
+    gap: 15px;
+    width: 100%;
+  }
+
+  .images img {
+    max-width: 100%;
+  }
+}

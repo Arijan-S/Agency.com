@@ -1,0 +1,90 @@
+.teamSection {
+  background-color: #28293e;
+  padding: 50px 0 100px;
+}
+
+.founderSection {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.founderDescription {
+  position: relative;
+}
+
+.founderDescription img {
+  position: absolute;
+  top: 1px;
+  right: 50px;
+}
+
+.founderSubheader {
+  color: #ef6d58;
+  font-size: 16px;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+}
+
+.founderDescription h3 {
+  position: relative;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  max-width: 470px;
+  margin-bottom: 50px;
+}
+
+.founderName {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.founderPosition {
+  color: #767684;
+  font-size: 14px;
+}
+
+@media (max-width: 500px) {
+  .sixthImage {
+    width: 100%;
+  }
+
+  .founderDescription img {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+  }
+
+  .founderSubheader {
+    color: #ef6d58;
+    font-size: 16px;
+    letter-spacing: 3px;
+    margin: 50px 0 30px;
+  }
+
+  .founderDescription h3 {
+    position: relative;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    width: 460px;
+    margin: 30px 0 50px;
+    text-align: left;
+  }
+
+  .founderName {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+  .founderPosition {
+    color: #767684;
+    font-size: 14px;
+  }
+}
