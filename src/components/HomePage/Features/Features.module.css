@@ -51,4 +51,14 @@
   .featureSection {
     margin-top: 0;
   }
+
+  .featureHeader {
+    font-size: 40px;
+    font-weight: 700;
+    color: #391400;
+    max-width: 397px;
+    line-height: 64px;
+    initial-letter: -1px;
+    margin-bottom: 20px;
+  }
 }

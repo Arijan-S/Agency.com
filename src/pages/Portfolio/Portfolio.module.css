@@ -159,6 +159,13 @@
 }
 
 @media screen and (max-width: 500px) {
+  .portfolioPageDescription h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 30px;
+  }
+
   .desktopLinks {
     display: none !important;
   }

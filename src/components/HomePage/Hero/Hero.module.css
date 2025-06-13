@@ -115,6 +115,11 @@
     padding: 50px 0 50px;
   }
 
+  .headerContainer h1 {
+    width: 370px;
+    font-size: 50px;
+  }
+
   .heroImage {
     width: 100%;
   }

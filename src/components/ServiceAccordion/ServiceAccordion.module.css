@@ -121,7 +121,7 @@
   }
 
   .accordionHeader h3 {
-    font-size: 32px;
+    font-size: 27px;
   }
 
   .accordionContent {
@@ -145,5 +145,10 @@
 
   .serviceCheckSection {
     width: 100%;
+  }
+
+  .accordionHeader img {
+    width: 12%;
+    height: 12%;
   }
 }

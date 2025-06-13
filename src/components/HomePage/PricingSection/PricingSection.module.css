@@ -194,6 +194,14 @@
     padding: 50px 0 50px;
   }
 
+  .pricingContainer h3 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #391400;
+    line-height: 64px;
+    width: 365px;
+  }
+
   .offers {
     display: flex;
     flex-direction: column;

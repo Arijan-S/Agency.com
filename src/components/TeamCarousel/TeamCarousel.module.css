@@ -112,4 +112,12 @@
   .teamContainer {
     padding: 50px 0 100px;
   }
+
+  .teamContainer h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 64px;
+    max-width: 531px;
+  }
 }

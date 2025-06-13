@@ -132,3 +132,12 @@
 .accordionHeader img:hover {
   transform: scale(1.1);
 }
+
+@media screen and (max-width: 480px) {
+  .contactDescription h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 30px;
+  }
+}

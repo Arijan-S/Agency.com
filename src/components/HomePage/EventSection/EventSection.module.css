@@ -102,4 +102,14 @@
   .eventCard {
     width: 100%;
   }
+
+  .eventContainer h3 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: -1px;
+    max-width: 507px;
+    text-align: center;
+  }
 }
