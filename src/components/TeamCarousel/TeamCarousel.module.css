@@ -79,8 +79,7 @@
 @media (max-width: 500px) {
   .teamContainer h2 {
     font-size: 40px;
-    width: 100%;
-    max-width: 100%;
+    width: 320px;
   }
 
   .team {

@@ -80,6 +80,13 @@
     margin-top: 50px;
   }
 
+  .portfolioContainer h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 30px;
+  }
+
   .work {
     overflow: hidden;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);

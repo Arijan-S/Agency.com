@@ -112,6 +112,11 @@
 }
 
 @media (max-width: 500px) {
+  .faqSection {
+    background-color: #fdf0e9;
+    padding: 100px 0 50px;
+  }
+
   .description {
     width: 470px;
   }
@@ -119,5 +124,6 @@
   .faqDescription h3 {
     text-align: left;
     font-size: 40px;
+    width: 355px;
   }
 }

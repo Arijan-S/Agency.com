@@ -277,7 +277,7 @@
   .mediaVideo img {
     width: 53%;
     object-fit: contain;
-    margin-left: -330px;
+    margin-left: -350px;
   }
 
   .mediaGallery {
@@ -289,7 +289,7 @@
 
   .gallery img {
     width: 25%;
-    margin-left: 24px;
+    margin-left: 5px;
     object-fit: cover;
   }
 
